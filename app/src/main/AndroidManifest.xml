@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.reliablecoders.examples" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MoBackSSOManagerExample"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".MoBackTableExample"
+            android:label="@string/title_activity_mo_back_table" >
+        </activity>
+        <activity
+            android:name=".MoBackObjectExample"
+            android:label="@string/title_activity_mo_back_object_example" >
+        </activity>
+        <activity
+            android:name=".MoBackFileManagerExample"
+            android:label="@string/title_activity_mo_back_file_manager_example" >
+        </activity>
+        <activity
+            android:name=".MoBackNetworkImageView"
+            android:label="@string/title_activity_mo_back_network_image_view" >
+        </activity>
+        <activity
+            android:name=".MoBackNetworkVideoView"
+            android:label="@string/title_activity_mo_back_network_video_view" >
+        </activity>
+    </application>
+
+</manifest>

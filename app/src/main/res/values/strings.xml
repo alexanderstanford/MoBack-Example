@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">examples</string>
+    <string name="title_activity_mo_back_table">MoBackTable</string>
+    <string name="title_activity_mo_back_object_example">MoBackObjectExample</string>
+    <string name="title_activity_mo_back_file_manager_example">MoBackFileManagerExample</string>
+    <string name="title_activity_mo_back_miscellaneous">MoBackMiscellaneous</string>
+    <string name="title_activity_mo_back_network_image_view">MoBackNetworkImageView</string>
+    <string name="title_activity_mo_back_network_video_view">MoBackNetworkVideoView</string>
+
+</resources>
