@@ -21,9 +21,9 @@ public class MoBackObjectExample extends Activity {
     /**
      * Keeping a reference to your App Keys.
      */
-    public static final String APP_KEY = " Your App Key Here ";
-    public static final String DEV_KEY = " Your Dev Key Here ";
-    public static final String PROD_KEY = " Your Prod Key Here ";
+    private static final String APP_KEY = " Your App Key Here ";
+    private static final String DEV_KEY = " Your Dev Key Here ";
+    private static final String PROD_KEY = " Your Prod Key Here ";
 
     /**
      * These are for usage in upcoming methods for simplicity's sake. It is not required to declare and initialize them here.
@@ -363,9 +363,9 @@ public class MoBackObjectExample extends Activity {
          * Here are a few examples of how to makes Queries for use in Fetches. There are many kinds of Queries and ways to use them for getting particular rows.
          */
         MoBackQuery.all(); /** This is the same as passing null, it will return all row in the fetch response */
-        MoBackQuery.whereValueForFieldIsEqualTo(" Name Of Column ", rowForTable); /** The 'Name Of Column' must match a column name in 'rowForTable'. When passing
+        MoBackQuery.whereValueForFieldIsEqualTo(" Name Of Column ", " Value "); /** The 'Name Of Column' must match a column name in your MoBack Table. When passing
                                                                                       this Query in a FetchAll, it will return all rows that have values equal to
-                                                                                      the value that is present within 'rowForTable' that has the same name as 'Name Of Column'. */
+                                                                                      the Value given. */
         MoBackQuery.all().setLimit(50); /** This Query, when passed in to a FetchAll, will return the first 50 rows of a Table. */
     }
 

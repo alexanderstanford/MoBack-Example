@@ -21,9 +21,9 @@ public class MoBackFileManagerExample extends Activity {
     /**
      * Keeping a reference to your App Keys.
      */
-    public static final String APP_KEY = " Your App Key Here ";
-    public static final String DEV_KEY = " Your Dev Key Here ";
-    public static final String PROD_KEY = " Your Prod Key Here ";
+    private static final String APP_KEY = " Your App Key Here ";
+    private static final String DEV_KEY = " Your Dev Key Here ";
+    private static final String PROD_KEY = " Your Prod Key Here ";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

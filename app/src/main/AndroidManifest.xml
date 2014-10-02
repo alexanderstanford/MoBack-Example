@@ -2,6 +2,21 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.reliablecoders.examples" >
 
+    <!-- Code Below Required for NotificationService. Replace all instances of com.moback.examples
+            with your own package name. -->
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.reliablecoders.examples.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.reliablecoders.examples.permission.C2D_MESSAGE" />
+
+    <!-- Code Above Required for NotificationService. Replace all instances of com.moback.examples
+            with your own package name. -->
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -31,6 +46,37 @@
             android:name=".MoBackNetworkVideoView"
             android:label="@string/title_activity_mo_back_network_video_view" >
         </activity>
+
+        <!-- Code Below Required for NotificationService. Replace all instances of com.moback.android
+            with your own package name. -->
+
+        <receiver
+            android:name="com.moback.android.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.reliablecoders.examples" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.moback.android.NotificationService" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- Code Above Required for NotificationService. Replace all instances of com.moback.examples
+            with your own package name. -->
+
     </application>
+
+    <!-- Code Below Required for more MoBack API Calls. -->
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Code Above Required for more MoBack API Calls. -->
 
 </manifest>
