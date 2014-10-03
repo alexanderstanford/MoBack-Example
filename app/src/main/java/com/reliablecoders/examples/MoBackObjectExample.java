@@ -43,7 +43,8 @@ public class MoBackObjectExample extends Activity {
          */
         MoBack.setApplicationKeys(this, APP_KEY, DEV_KEY);
 
-        //TODO IMPORTANT: THE NAME OF THE JAVA CLASS FILE THAT YOU EXTEND WITH MoBackObject AND USE FOR YOUR ROWS IS THE NAME OF THE TABLE THAT THOSE ROWS GET CREATED/UPDATED/DELETED.
+        //TODO IMPORTANT: THE NAME OF THE JAVA CLASS FILE THAT YOU EXTEND WITH MoBackObject AND USE FOR YOUR ROWS, WILL BY DEFAULT BE THE NAME OF THE TABLE THAT THOSE ROWS GET
+        //TODO            CREATED/UPDATED/DELETED. TO CHANGE THIS, USE MoBackObject.setTableName
     }
 
     /**
@@ -373,6 +374,11 @@ public class MoBackObjectExample extends Activity {
      * Example of a few miscellaneous methods.
      */
     public void miscellaneous() {
+        /** By default, all method calls involving your MoBackObject extending class will use the name of that class as the Table for which they will update, create,
+         *  and delete rows from. MoBackObject.setTableReference will change that default Table name to whatever string you give it.
+         */
+        MoBackObject.setTableReference(" Name Of Table That All Future Method Calls Will Use ");
+
         /** Gets the unique ID of this row. */
         rowForTable.getId();
 
