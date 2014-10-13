@@ -44,7 +44,7 @@ public class MoBackObjectExample extends Activity {
         MoBack.setApplicationKeys(this, APP_KEY, DEV_KEY);
 
         //TODO IMPORTANT: THE NAME OF THE JAVA CLASS FILE THAT YOU EXTEND WITH MoBackObject AND USE FOR YOUR ROWS, WILL BY DEFAULT BE THE NAME OF THE TABLE THAT THOSE ROWS GET
-        //TODO            CREATED/UPDATED/DELETED. TO CHANGE THIS, USE MoBackObject.setTableName
+        //TODO            CREATED/UPDATED/DELETED. TO CHANGE THIS, USE MoBackObject.setTableReference
     }
 
     /**
